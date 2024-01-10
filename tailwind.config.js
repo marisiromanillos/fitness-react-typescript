@@ -10,7 +10,7 @@ export default {
         "gray-50": "#efe6e6",
         "gray-100": "#FFE1E0",
         "gray-500": "#5e0000",
-        "primary-100": "#ffffff",
+        "primary-100": "#CCCCCC",
         "primary-500": "#ffffff",
       },
       backgroundImage: (theme) => ({
