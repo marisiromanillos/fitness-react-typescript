@@ -16,12 +16,12 @@ const Navbar = ({ topPage, selectedP, setSelectedP }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [menuToggled, setMenuToggled] = useState<boolean>(false);
   const aboveMScreens = useMediaQuery("(min-width: 1060px)");
-  const navBarBg = topPage ? "" : "bg-primary-100 drop-shadow";
+  const navBarBg = topPage ? "" : "bg-black drop-shadow";
 
   return (
     <nav>
       <div
-        className={`${navBarBg} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+        className={`${navBarBg} ${flexBetween} fixed top-0 z-30 w-full py-1`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
@@ -73,7 +73,7 @@ const Navbar = ({ topPage, selectedP, setSelectedP }: Props) => {
 
       {/* mobile menu */}
       {!aboveMScreens && menuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-black drop-shadow-xl">
           {/* close icon */}
           <div className="flex justify-end p-12">
             <button onClick={() => setMenuToggled(!menuToggled)}>

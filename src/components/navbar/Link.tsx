@@ -11,7 +11,7 @@ const Link = ({ page, selectedP, setSelectedP }: Props) => {
   return (
     <AnchorLink
       className={`${selectedP === smallCaseP ? "tex-primary-500" : ""}
-      transition duration-500 hover:text-black`}
+      transition duration-500 hover:underline`}
       href={`#${smallCaseP}`}
       onClick={() => setSelectedP(smallCaseP)}
     >
