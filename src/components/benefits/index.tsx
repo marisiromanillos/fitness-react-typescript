@@ -14,7 +14,7 @@ const benefits: Array<BenefitType> = [
     },
     {
         icon: <UserGroupIcon className="h-6 w-6"/>,
-        title:"Workout with muscle-minded people like you",
+        title:"Muscle-minded people",
         description: "Our workouts are not just exercises; they are a collective pursuit of wellness, challenging each other to reach new heights. Embrace the motivation that comes from training alongside those who understand and share your fitness goals."
     },
     {
