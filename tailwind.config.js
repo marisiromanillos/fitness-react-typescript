@@ -6,10 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#f8f4eb",
-        "gray-50": "#efe6e6",
-        "gray-100": "#FFE1E0",
-        "gray-500": "#5e0000",
+        "primary-blue": "#067DFC",
+        "primary-pink": "#FF1FF4",
+        "gray-500": "#1F1F1F",
         "primary-100": "#CCCCCC",
         "primary-500": "#ffffff",
       },
@@ -22,8 +21,6 @@ export default {
       },
       content: {
         bestrongtext: "url('./assets/BestrongText.png')",
-        abstractwaves: "url('./assets/AbstractWaves.png')",
-        sparkles: "url('./assets/Sparkles.png')",
         circles: "url('./assets/Circles.png')",
       },
     },

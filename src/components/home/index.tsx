@@ -26,8 +26,7 @@ const Home = ({ setSelectedP }: Props) => {
           <motion.div className="md:-mt-20" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{duration: 0.5}} variants={{hidden:{opacity:0, x:-50},
         visible:{opacity: 1, x:0}}}>
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:z-[-1] before:content-bestrongtext
-BestrongText">
+              <div className="before:absolute before:-top-20 before:z-[-1] before:content-bestrongtext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
@@ -41,7 +40,7 @@ BestrongText">
             </p>
           </motion.div>
           {/* actions */}
-          <motion.div className="mt-8 flex items-center gap-8"initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{ delay:0.2,duration: 0.5}} variants={{hidden:{opacity:0, x:-50},
+          <motion.div className="mt-8 flex items-center gap-8" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{ delay:0.2,duration: 0.5}} variants={{hidden:{opacity:0, x:-50},
         visible:{opacity: 1, x:0}}}>
             <ActionButton setSelectedP={setSelectedP}>Join Now</ActionButton>
             <AnchorLink

@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css"; // Import Tailwind CSS styles
 import "./index.css";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
+import Benefits from "./components/benefits";
 import { useEffect, useState } from "react";
 import { SelectedP } from "./shared/types";
 
@@ -30,6 +31,7 @@ const App = () => {
           setSelectedP={setSelectedP}
         />
         <Home setSelectedP={setSelectedP} />
+        <Benefits setSelectedP={setSelectedP}/>
       </div>
     </>
   );
