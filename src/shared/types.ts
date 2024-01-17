@@ -1,6 +1,6 @@
 export enum SelectedP {
   Home = "home",
-  Membership = "benefits",
+  Benefits = "benefits",
   OurClasses = "ourclasses",
   FreeDayPass = "freedaypass",
 }

@@ -37,7 +37,7 @@ const Navbar = ({ topPage, selectedP, setSelectedP }: Props) => {
                     setSelectedP={setSelectedP}
                   />
                   <Link
-                    page="Membership"
+                    page="Benefits"
                     selectedP={selectedP}
                     setSelectedP={setSelectedP}
                   />
@@ -88,7 +88,7 @@ const Navbar = ({ topPage, selectedP, setSelectedP }: Props) => {
               setSelectedP={setSelectedP}
             />
             <Link
-              page="Membership"
+              page="Benefits"
               selectedP={selectedP}
               setSelectedP={setSelectedP}
             />

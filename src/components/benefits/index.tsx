@@ -44,6 +44,9 @@ const Benefits = ({setSelectedP}: Props) => {
     return <>
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20 md:mt-[150px]">
         {/* header */}
+        <motion.div
+        onViewportEnter={() => setSelectedP(SelectedP.Benefits)}
+      >
         <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{duration: 0.5}} variants={{hidden:{opacity:0, x:-50},
         visible:{opacity: 1, x:0}}} className="md:w-3/5 md:my-5">
             <TitleText>
@@ -54,7 +57,7 @@ const Benefits = ({setSelectedP}: Props) => {
             </p>
         </motion.div>
         {/* benefits */}
-        <motion.div 
+        <motion.div
             initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0.5 }} variants={container}
         className="mt-5 items-center justify-between gap-8 md:flex">
@@ -96,6 +99,7 @@ const Benefits = ({setSelectedP}: Props) => {
                 </div>
             </div>
         </div>
+        </motion.div>
         </section>
         </>
 }

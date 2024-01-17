@@ -4,8 +4,10 @@ import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Benefits from "./components/benefits";
 import OurClasses from "./components/ourClasses";
+import ContactUs from "./components/contactUs";
 import { useEffect, useState } from "react";
 import { SelectedP } from "./shared/types";
+ 
 
 const App = () => {
   const [selectedP, setSelectedP] = useState<SelectedP>(SelectedP.Home);
@@ -34,6 +36,7 @@ const App = () => {
         <Home setSelectedP={setSelectedP} />
         <Benefits setSelectedP={setSelectedP}/>
         <OurClasses setSelectedP={setSelectedP}/>
+        <ContactUs setSelectedP={setSelectedP} />
       </div>
     </>
   );
