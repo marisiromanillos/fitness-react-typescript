@@ -41,6 +41,8 @@ type Props = {
   };
 
 const Benefits = ({setSelectedP}: Props) => {
+    const benefitTitle = `text-black basis-3/5 font-monserrat text-2xl font-bold`;
+
     return <>
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20 md:mt-[150px]">
         {/* header */}
@@ -48,10 +50,10 @@ const Benefits = ({setSelectedP}: Props) => {
         onViewportEnter={() => setSelectedP(SelectedP.Benefits)}
       >
         <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{duration: 0.5}} variants={{hidden:{opacity:0, x:-50},
-        visible:{opacity: 1, x:0}}} className="md:w-3/5 md:my-5">
-            <TitleText>
+        visible:{opacity: 1, x:0}}} className="md:w-3/5 md:mt-[200px]">
+            <h1 className={benefitTitle}>
                 WHERE ATHLETES ARE BUILT
-            </TitleText>
+            </h1>
             <p className="my-5 text-sm text-gray-500">
             Joining Be Strong Gym offers numerous benefits for individuals looking to enhance their fitness journey. Our state-of-the-art facilities provide a welcoming and motivating environment for all fitness levels. With a diverse range of cutting-edge equipment and expert trainers, members can tailor their workouts to achieve their specific goals efficiently. The supportive community at Be Strong Gym fosters a sense of camaraderie, making fitness an enjoyable and social experience. Whether you're a beginner or a seasoned fitness enthusiast, our personalized training programs and classes cater to your unique needs.  
             </p>
@@ -77,9 +79,9 @@ const Benefits = ({setSelectedP}: Props) => {
                     <div className="mt-6">
                         <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{duration: 0.5}} variants={{hidden:{opacity:0, x:50},
         visible:{opacity: 1, x:0}}}>
-                            <TitleText>
+                            <h1 className={benefitTitle}>
                                 MILLIONS OF KILOGRAMS BEING LIFTED
-                            </TitleText>
+                            </h1>
                         </motion.div>
                     </div>
                 </div>

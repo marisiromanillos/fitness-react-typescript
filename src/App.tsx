@@ -5,6 +5,7 @@ import Home from "./components/home";
 import Benefits from "./components/benefits";
 import OurClasses from "./components/ourClasses";
 import ContactUs from "./components/contactUs";
+import Footer from "./components/footer/indext";
 import { useEffect, useState } from "react";
 import { SelectedP } from "./shared/types";
  
@@ -37,6 +38,7 @@ const App = () => {
         <Benefits setSelectedP={setSelectedP}/>
         <OurClasses setSelectedP={setSelectedP}/>
         <ContactUs setSelectedP={setSelectedP} />
+        <Footer />
       </div>
     </>
   );
