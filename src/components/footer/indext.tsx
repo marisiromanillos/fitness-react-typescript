@@ -1,8 +1,8 @@
 import Weight from "@/assets/Weight.png"
 
-type Props = {}
+// type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
     return <>
     <footer className="bg-black py-16">
         <div className="justify-content mx-auto w-5/6  gap-16 md:flex md:justify-between">
